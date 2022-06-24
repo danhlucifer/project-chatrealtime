@@ -1,0 +1,17 @@
+.home__bg{
+    background-image: url(https://www.elle.vn/wp-content/uploads/2020/03/21/394759/tinh-ban-khoac-vai-nhau.jpg);
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    border-radius: 30px;
+}
+.mt{
+    margin-top: 150px;
+}
+
+.home-message-icon{
+    margin-left: 10px;
+    display: inline-block;
+}

@@ -1,0 +1,26 @@
+framework sử dụng, hỗ trợ:
+- Nodejs (back-end):
+	+ bcrypt: mã hóa mật khẩu
+	+ Cors: cho phép lấy dữ liệu từ một trang khác thông qua XMLHttpRequest
+	+ dotenv: biến môi trường.
+	+ express: Viết API
+	+ mongoose: Liên kết vs MongoDB trên web
+	+ nodemon: tự động khởi động lại project
+	+ socket.io: chat realtime
+	+ validator: kiểm tra dữ liệu
+
+- Reactjs(Front-end):
+	+ react-bootstrap: Sử dụng boostrap để tạo giao diện
+	+ redux: ứng dụng chạy trong môi trường khác nhau(client, server)
+	+ react-router-dom: thay đổi URL và giữ giao diện người dùng.
+	+ socket.io-clinet: công cụ để thực hiện việc kết nối ngay lập tức giữa Client và Server cho các ứng dụng Realtime.	
+
+- MongoDB(lưu account and message):
+- cloudinary(lưu ảnh):
+
+Các chức năng chính:
+- Login, Logout, Signup.
+- Upload Avatar.
+- Rooms Chat.
+- Chat realtime.
+- Hiển thị người dùng đã đăng xuất(Offline)
