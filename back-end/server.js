@@ -27,7 +27,6 @@ const io = require('socket.io')(server, {
         methods: ['GET', 'POST']
     }
 })
-
 server.listen(process.env.PORT,()=>{
     console.log(`Lisening to port: ${process.env.PORT}`);
 })

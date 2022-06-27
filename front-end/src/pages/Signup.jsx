@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Col, Container, Form, Row, Button } from "react-bootstrap";
-// import { useSignupUserMutation } from "../services/appApi";
+import { useSignupUserMutation } from "../services/appApi";
 import { Link, useNavigate } from "react-router-dom";
 import "./Signup.css";
 import botImg from "../assets/bot.jpeg";
@@ -9,8 +9,8 @@ function Signup() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
-    // const [signupUser, { isLoading, error }] = useSignupUserMutation();
-    // const navigate = useNavigate();
+    const [signupUser, { isLoading, error }] = useSignupUserMutation();
+    const navigate = useNavigate();
     //image upload states
     const [image, setImage] = useState(null);
     const [upladingImg, setUploadingImg] = useState(false);
@@ -52,12 +52,12 @@ function Signup() {
         const url = await uploadImage(image);
         console.log(url);
         // signup the user
-        // signupUser({ name, email, password, picture: url }).then(({ data }) => {
-        //     if (data) {
-        //         console.log(data);
-        //         navigate("/chat");
-        //     }
-        // });
+        signupUser({ name, email, password, picture: url }).then(({ data }) => {
+            if (data) {
+                console.log(data);
+                navigate("/chat");
+            }
+        });
     }
 
     return (
